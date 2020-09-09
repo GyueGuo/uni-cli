@@ -11,7 +11,7 @@ const rmdir = require('./rmdir');
 const Reg = /(['"])([0-9.]+)\1/;
 
 module.exports = function() {
-  const { liepin_argv: { update, main } } = global;
+  const { lie_argv: { update, main } } = global;
   const distPath = path.resolve(CONFIG.distDir);
   const tempPath = fs.mkdtempSync(path.join(os.tmpdir(), CONFIG.tempDir));
   // 下载主包

@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const logErr = require('../utils/logErr');
-const name = '@liepin/uni-cli-wx';
+const name = 'uni-cli-wx';
 
 module.exports = function () {
   const v = execSync(`npm view ${name} version`).toString().trim();

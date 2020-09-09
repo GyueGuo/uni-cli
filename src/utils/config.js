@@ -2,26 +2,26 @@ module.exports = {
   packages: [
     {
       "root": 'gcdc',
-      "git": "http://gitcode.lietou.com/dev38/fe-mp/fe-gcdc-wx.git",
+      "git": "http://gitcode.liepiin.com/dev38/fe-mp/fe-gcdc-wx.git",
     },
     {
       "root": 'c',
-      "git": "http://gitcode.lietou.com/dev38/fe-mp/fe-c-wx.git",
+      "git": "http://gitcode.liepiin.com/dev38/fe-mp/fe-c-wx.git",
     },
     {
       "root": 'crecruit',
-      "git": "http://gitcode.lietou.com/dev38/fe-mp/fe-crecruit-wx.git",
+      "git": "http://gitcode.liepiin.com/dev38/fe-mp/fe-crecruit-wx.git",
     },
     {
       "root": 'crm',
-      "git": "http://gitcode.lietou.com/dev38/fe-mp/fe-crm-wx.git",
+      "git": "http://gitcode.liepiin.com/dev38/fe-mp/fe-crm-wx.git",
     },
     {
       "root": 'qywechat',
-      "git": "http://gitcode.lietou.com/dev38/fe-mp/fe-qywechat-wx.git",
+      "git": "http://gitcode.liepiin.com/dev38/fe-mp/fe-qywechat-wx.git",
     },
   ],
-  main: "http://gitcode.lietou.com/dev38/fe-mp/fe-main-wx.git",
+  main: "http://gitcode.liepiin.com/dev38/fe-mp/fe-main-wx.git",
   distDir: '.dist',
   tempDir: 'mp-temp',
   pagesFile: 'pages.json',

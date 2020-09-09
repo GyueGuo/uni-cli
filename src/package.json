@@ -1,47 +1,6 @@
 {
-  "_args": [
-    [
-      "@liepin/uni-cli-wx@1.0.10",
-      "/Users/guojiyuan/works/svn/mp/fe-c-mp"
-    ]
-  ],
-  "_cnpm_publish_time": 1577157404445,
-  "_from": "@liepin/uni-cli-wx@^1.0.20-beta4",
-  "_id": "@liepin/uni-cli-wx@1.0.25",
-  "_inBundle": false,
-  "_inCache": true,
-  "_integrity": "sha1-zy+kQv2CU5OMiz1gIpzCK3dffW4=",
-  "_location": "/@liepin/uni-cli-wx",
-  "_nodeVersion": "10.15.0",
-  "_npmUser": {
-    "name": "qinzh",
-    "email": "qinzh@liepin.com"
-  },
-  "_npmVersion": "2.14.22",
-  "_phantomChildren": {},
-  "_publish_on_cnpm": true,
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "@liepin/uni-cli-wx@^1.0.20-beta4",
-    "name": "@liepin/uni-cli-wx",
-    "escapedName": "@liepin%2funi-cli-wx",
-    "scope": "@liepin",
-    "rawSpec": "^1.0.20-beta4",
-    "saveSpec": null,
-    "fetchSpec": "^1.0.20-beta4"
-  },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "http://registry.cnpm.lietou.com/@liepin/uni-cli-wx/download/@liepin/uni-cli-wx-1.0.25.tgz",
-  "_shasum": "cf2fa442fd8253938c8b3d60229cc22b775f7d6e",
-  "_shrinkwrap": null,
-  "_spec": "@liepin/uni-cli-wx@^1.0.20-beta4",
-  "_where": "/Users/guojiyuan/works/svn/mp/fe-c-mp",
-  "author": "",
   "bin": {
-    "liepin-uni-cli": "bin/index.js"
+    "uni-cli": "bin/index.js"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -49,25 +8,5 @@
   },
   "deprecated": false,
   "description": "小程序多项目打包命令",
-  "devDependencies": {},
-  "dist": {
-    "shasum": "406d766be54ecd60b014a8863e13a6692bb7e529",
-    "size": 6810,
-    "key": "/@liepin/uni-cli-wx/-/@liepin/uni-cli-wx-1.0.0.tgz",
-    "tarball": "http://registry.cnpm.lietou.com/@liepin/uni-cli-wx/download/@liepin/uni-cli-wx-1.0.0.tgz"
-  },
-  "license": "ISC",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "guojy",
-      "email": "guojiyuan@liepin.com"
-    }
-  ],
-  "name": "@liepin/uni-cli-wx",
-  "optionalDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.25"
+  "devDependencies": {}
 }

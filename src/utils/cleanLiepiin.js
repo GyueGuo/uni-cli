@@ -7,7 +7,7 @@ const logWarn = require('./logWarn');
 
 function clean() {
   return new Promise(function (resolve) {
-    const p =  path.join(CONFIG.distDir, 'node_modules', '@liepin');
+    const p =  path.join(CONFIG.distDir, 'node_modules', '@liepiin');
     if (fs.existsSync(p)) {
       rmdir(p);
       setTimeout(resolve, 500);
@@ -18,9 +18,9 @@ function clean() {
 }
 module.exports = function () {
   return new Promise(function (resolve) {
-    const p =  path.join(CONFIG.distDir, 'node_modules', '@liepin');
+    const p =  path.join(CONFIG.distDir, 'node_modules', '@liepiin');
     if (fs.existsSync(p)) {
-      logWarn('是否删除已安装@liepin包？(y/n)\n');
+      logWarn('是否删除已安装@liepiin(y/n)\n');
       async function handleInput(data) {
         const input = data.toLowerCase();
         if (input.indexOf('y') > -1) {

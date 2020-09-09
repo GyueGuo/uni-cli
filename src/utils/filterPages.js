@@ -1,5 +1,5 @@
 module.exports = function (array) {
-  const { liepin_argv: { edge } } = global;
+  const { lie_argv: { edge } } = global;
   return array.filter(function(page){
     const { excludes } = page; 
     if (!excludes) {

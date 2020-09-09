@@ -12,7 +12,7 @@ const removeDir = require('./rmdir');
 //todo
 module.exports = function () {
   return new Promise(function (resolve) {
-    const { liepin_argv } = global;
+    const { lie_argv } = global;
     const distPath = path.resolve(CONFIG.distDir);
     const tempPath = fs.mkdtempSync(path.join(os.tmpdir(), CONFIG.tempDir));
     // 下载主包
@@ -20,7 +20,7 @@ module.exports = function () {
     const mainTempPath2Save = path.join(tempPath, path.basename(MainGit, '.git'));
 
     const distSrcPath = path.join(distPath, 'src');
-    execSync(`git clone ${liepin_argv.main ? `-b ${liepin_argv.main} ` : ''}${MainGit} ${mainTempPath2Save}`);
+    execSync(`git clone ${lie_argv.main ? `-b ${lie_argv.main} ` : ''}${MainGit} ${mainTempPath2Save}`);
     if (!fs.existsSync(distPath)) {
       // 创建打包目录
       fs.mkdirSync(distPath);
@@ -60,7 +60,7 @@ module.exports = function () {
       const path2save = path.join(tempPath, subName);
 
       removeDir(path2save);
-      execSync(`git clone ${liepin_argv[root] ? `-b ${liepin_argv[root]} ` : ''}${git} ${path2save}`);
+      execSync(`git clone ${lie_argv[root] ? `-b ${lie_argv[root]} ` : ''}${git} ${path2save}`);
       const pageContent = JSON.parse(fs.readFileSync(path.join(path2save, CONFIG.pagesFile)));
       const filtered = filterPages(pageContent.pages);
       // 如果没有页面需要打包到当前端，则忽略

@@ -5,12 +5,12 @@ const startUni = require('../utils/startUni');
 const cleanDist = require('../utils/cleanDist');
 const mkPages4route = require('../utils/mkPages4route');
 const updateMainVersion = require('../utils/updateMainVersion');
-const cleanLiepin = require('../utils/cleanLiepin');
+const cleanLiepiin = require('../utils/cleanLiepiin');
 const logErr = require('../utils/logErr');
 
 
 module.exports = async function() {
-  const { liepin_argv: { update } } = global;
+  const { lie_argv: { update } } = global;
   if (!update) {
     logErr('缺少升级版本参数！');
     process.exit(0);
@@ -19,7 +19,7 @@ module.exports = async function() {
   await mergeOthers();
   await mergeSelf();
   await mkPages4route();
-  await cleanLiepin();
+  await cleanLiepiin();
   await handleNpm();
   await updateMainVersion();
   await startUni();

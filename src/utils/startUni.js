@@ -29,7 +29,7 @@ function openDevTool ({ cwd, dev, edge }) {
 }
 module.exports =  function () {
   return new Promise(function (resolve) {
-    const { liepin_argv: { mode, edge } } = global;
+    const { lie_argv: { mode, edge } } = global;
     const dev = mode === 'dev';
     const script = `node_modules/.bin/cross-env NODE_ENV=${dev ? 'development' : 'production'} UNI_PLATFORM=mp-${edge} node_modules/.bin/vue-cli-service uni-build ${dev ? '' : '--minimize'}`;
     function kill() {

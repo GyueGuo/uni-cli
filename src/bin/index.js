@@ -14,7 +14,7 @@ remain.forEach(function (item) {
   const [key, value] = item.split('=');
   extra[key] = value;
 });
-global.liepin_argv = extra;
+global.lie_argv = extra;
 
 switch (mode) {
   case 'dev':
